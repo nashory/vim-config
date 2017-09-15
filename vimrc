@@ -1,11 +1,12 @@
 
 " THIS VIM SETTING IS ORGANIZED BY M.C.SHIN.
-" MOST RECENT MODIFICATION WAS DONE IN 2015.10.16 
+" MOST RECENT MODIFICATION : 2017.09.12 
 
 
 set nu 		"sho lilne numbers on the screen
 set ai		"trun on auto identataion
 set ts=4	"set tab stops to 4
+au Bufenter *.\(c\|cpp\|h\|py\|lua\) set et		" convert tab to space
 set hls		"highlight search word
 set autoindent	"Auto Indent
 set cindent		"Auto Indent
