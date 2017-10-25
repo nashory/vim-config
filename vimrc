@@ -7,6 +7,11 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'https://github.com/wesleyche/SrcExpl.git'
 Plug 'https://github.com/vim-scripts/AutoComplPop.git'
 Plug 'https://github.com/vim-scripts/taglist.vim.git'
+Plug 'https://github.com/bling/vim-airline'
+Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'scrooloose/syntastic'
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'https://github.com/toupeira/vim-desertink.git'			" color scheme
 call plug#end()
 
 " key mapping
@@ -32,6 +37,11 @@ set scrolloff=5		"number of lines visible above or below the cursor.
 set showmatch 		"Highlinght the correspondant bracket.
 set mouse=a
 set paste			"Prevent stair phonomenon when coy & paste
+
+let g:ctrlp_custom_ignore = {
+	\ 'dir':  '\.git$\|public$\|log$\|tmp$\|vendor$',
+	\ 'file': '\v\.(exe|so|dll)$'
+	\ }
 
 
 
