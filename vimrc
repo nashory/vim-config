@@ -1,8 +1,25 @@
-
 " THIS VIM SETTING IS ORGANIZED BY M.C.SHIN.
 " MOST RECENT MODIFICATION : 2017.09.12 
 
+" VIM plugins (https://github.com/junegunn/vim-plug)
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'https://github.com/wesleyche/SrcExpl.git'
+Plug 'https://github.com/vim-scripts/AutoComplPop.git'
+Plug 'https://github.com/vim-scripts/taglist.vim.git'
+call plug#end()
 
+" key mapping
+nmap <C-H> <C-W>h
+nmap <C-J> <C-W>j
+nmap <C-K> <C-W>k
+nmap <C-L> <C-W>l
+nmap <F7> : NERDTreeToggle<CR>
+
+
+
+" env setting
+set modifiable   " set modifiable
 set nu 		"sho lilne numbers on the screen
 set ai		"trun on auto identataion
 set ts=4	"set tab stops to 4
