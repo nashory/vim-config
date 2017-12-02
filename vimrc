@@ -12,6 +12,7 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'scrooloose/syntastic'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'https://github.com/toupeira/vim-desertink.git'			" color scheme
+Plug 'https://github.com/leafgarland/typescript-vim.git'		" typescript
 call plug#end()
 
 
@@ -26,7 +27,7 @@ au Bufenter *.\(c\|cpp\|h\|py\|lua\) set et		" convert tab to space
 set hls		"highlight search word
 set autoindent	"Auto Indent
 set cindent		"Auto Indent
-set shiftwidth=4	"tab space when auto indent.
+set shiftwidth=2	"tab space when auto indent.
 set scrolloff=5		"number of lines visible above or below the cursor.
 set showmatch 		"Highlinght the correspondant bracket.
 set mouse=a
