@@ -31,6 +31,9 @@ sudo apt-get install ctags
 + <`ctrl + j`> ==>  move to right window
 + <`ctrl + k`> ==>  move to upper window
 + <`ctrl + l`> ==>  move to below window
++ <`ctrl + o`> ==>  split window vertically
++ <`ctrl + i`> ==>  split window horizontally
++ <`ctrl + u`> ==>  close split window
 + <`F8`> ==>  activate Taglist (`fn + F8` for mac)
 
 

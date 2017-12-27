@@ -70,6 +70,7 @@ nmap <C-u> <C-w>c
 
 " NERDTree setting.
 let mapleader=","
+let g:NERDTreeDirArrows=0
 nnoremap <Leader>rc :rightbelow vnew $MYVIMRC<CR>
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
