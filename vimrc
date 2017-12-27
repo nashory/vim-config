@@ -63,6 +63,10 @@ endif
 
 set autoindent
 
+" VIM setting.
+nmap <C-o> <C-w>v
+nmap <C-i> <C-w>n
+nmap <C-u> <C-w>c
 
 " NERDTree setting.
 let mapleader=","
