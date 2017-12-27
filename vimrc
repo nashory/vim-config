@@ -64,6 +64,7 @@ endif
 set autoindent
 
 " VIM setting.
+set encoding=utf-8
 nmap <C-o> <C-w>v
 nmap <C-i> <C-w>n
 nmap <C-u> <C-w>c
