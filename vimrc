@@ -64,6 +64,7 @@ endif
 set autoindent
 
 " VIM setting.
+set encoding=utf-8
 nmap <C-o> <C-w>v
 nmap <C-i> <C-w>n
 nmap <C-u> <C-w>c
@@ -71,6 +72,9 @@ nmap <C-u> <C-w>c
 " NERDTree setting.
 let mapleader=","
 let g:NERDTreeDirArrows=0
+let g:NERDTreeQuitOnOpen = 1
+let g:NERDTreeAutoDeleteBuffer = 1
+let g:NERDTreeMinimalU = 1
 nnoremap <Leader>rc :rightbelow vnew $MYVIMRC<CR>
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
@@ -78,6 +82,9 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nnoremap <C-f> :NERDTreeFind<CR>
 nmap <Leader>n : NERDTreeToggle<CR>
+" au VimEnter *  NERDTree			" open NERDTree by dafault.
+
+
 
 " Taglist setting.
 nmap <F8> :Tlist<CR>
