@@ -12,6 +12,9 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'scrooloose/syntastic'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'https://github.com/toupeira/vim-desertink.git'			" color scheme
+Plug 'https://github.com/tomtom/tlib_vim.git'
+Plug 'https://github.com/MarcWeber/vim-addon-mw-utils.git'
+Plug 'https://github.com/garbas/vim-snipmate.git'
 call plug#end()
 
 
@@ -69,3 +72,6 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nnoremap <C-f> :NERDTreeFind<CR>
 nmap <Leader>n : NERDTreeToggle<CR>
+
+" Taglist setting.
+nmap <F8> :Tlist<CR>
