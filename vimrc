@@ -25,12 +25,10 @@ call plug#end()
 set modifiable   " set modifiable
 set nu 		"sho lilne numbers on the screen
 set ai		"trun on auto identataion
-set ts=4	"set tab stops to 4
 au Bufenter *.\(c\|cpp\|h\|py\|lua\) set et		" convert tab to space
 set hls		"highlight search word
 set autoindent	"Auto Indent
 set cindent		"Auto Indent
-set shiftwidth=2	"tab space when auto indent.
 set scrolloff=5		"number of lines visible above or below the cursor.
 set showmatch 		"Highlinght the correspondant bracket.
 set mouse=a
@@ -41,6 +39,19 @@ let g:ctrlp_custom_ignore = {
 	\ 'file': '\v\.(exe|so|dll)$'
 	\ }
 
+" by default, the indent is 2 spaces.
+set smartindent
+set expandtab
+set tabstop=4				  "set tab stops to 4
+set shiftwidth=4			" tab space when auto indent.
+set softtabstop=4
+
+" for html/ruby/javascript/typescript files, 2 spaces
+filetype plugin indent on       " enable file type detection 
+autocmd Filetype html setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
+autocmd Filetype typecript setlocal ts=2 sw=2 expandtab
 
 
 syntax enable
