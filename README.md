@@ -16,13 +16,15 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 + ctags
 ~~~
-sudo apt-get install ctags
+(Ubuntu) sudo apt-get install ctags
+(OS X) brew install ctags
 ~~~
 
 
 # How to install plugins
-[step 1.] copy & paste vimrc file to your user folder. (rename it to .vimrc)
-[step 2.] open .vimrc, and `:PlugInstall` to install plugins.
+
++ [step 1.] copy & paste vimrc file to your user folder. (rename it to .vimrc)
++ [step 2.] open .vimrc, and `:PlugInstall` to install plugins.
 
 
 ## Shortcuts
