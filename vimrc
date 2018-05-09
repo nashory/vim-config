@@ -16,6 +16,7 @@ Plug 'https://github.com/leafgarland/typescript-vim.git'		" typescript
 Plug 'https://github.com/tomtom/tlib_vim.git'					" snipMate
 Plug 'https://github.com/MarcWeber/vim-addon-mw-utils.git'		" snipMate
 Plug 'https://github.com/garbas/vim-snipmate.git'				" snipMate
+Plug 'thaerkh/vim-indentguides'						" indent guide
 call plug#end()
 
 
