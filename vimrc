@@ -9,7 +9,6 @@ Plug 'https://github.com/vim-scripts/AutoComplPop.git'
 Plug 'https://github.com/vim-scripts/taglist.vim.git'
 Plug 'https://github.com/bling/vim-airline'
 Plug 'https://github.com/tpope/vim-fugitive.git'
-Plug 'scrooloose/syntastic'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'https://github.com/toupeira/vim-desertink.git'			" color scheme
 Plug 'https://github.com/leafgarland/typescript-vim.git'		" typescript
