@@ -25,6 +25,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 + [step 1.] copy & paste vimrc file to your user folder. (rename it to .vimrc)
 + [step 2.] open .vimrc, and `:PlugInstall` to install plugins.
++ [step 3.] open .vimrc, and `:PlugUpdate` to update plugins.
+
 
 
 ## Shortcuts

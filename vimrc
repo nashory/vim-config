@@ -4,21 +4,25 @@
 " VIM plugins (https://github.com/junegunn/vim-plug)
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdcommenter'                                 " auto comment (, + c + <space>)
+Plug 'scrooloose/syntastic'						                " syntastic (check syntax error)
+Plug 'itchyny/calendar.vim'                                     " calendar
+Plug 'chrisbra/csv.vim'                                         " csv
+Plug 'plasticboy/vim-markdown'                                  " markdown
+Plug 'pangloss/vim-simplefold'                                  " fold code
 Plug 'https://github.com/wesleyche/SrcExpl.git'
 Plug 'https://github.com/vim-scripts/AutoComplPop.git'
 Plug 'https://github.com/vim-scripts/taglist.vim.git'
 Plug 'https://github.com/bling/vim-airline'
 Plug 'https://github.com/tpope/vim-fugitive.git'
-Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'                " find file (ctrl + p)
 Plug 'https://github.com/toupeira/vim-desertink.git'			" color scheme
 Plug 'https://github.com/leafgarland/typescript-vim.git'		" typescript
 Plug 'https://github.com/tomtom/tlib_vim.git'					" snipMate
 Plug 'https://github.com/MarcWeber/vim-addon-mw-utils.git'		" snipMate
 Plug 'https://github.com/garbas/vim-snipmate.git'				" snipMate
-Plug 'thaerkh/vim-indentguides'						" indent guide
+Plug 'Lokaltog/vim-easymotion'                                  " move mouse curser at right position.
 call plug#end()
-
-
 
 
 " env setting
@@ -86,6 +90,8 @@ let g:NERDTreeDirArrows=0
 let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeAutoDeleteBuffer = 1
 let g:NERDTreeMinimalU = 1
+let NERDTreeShowLineNumbers=1
+let g:NERDTreeWinPos = "left"
 nnoremap <Leader>rc :rightbelow vnew $MYVIMRC<CR>
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
@@ -94,6 +100,38 @@ nmap <C-l> <C-w>l
 nnoremap <C-f> :NERDTreeFind<CR>
 nmap <Leader>n : NERDTreeToggle<CR>
 " au VimEnter *  NERDTree			" open NERDTree by dafault.
+
+" NERD Commenter setting.
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+" customize keymapping
+map <Leader>cc <plug>NERDComToggleComment
+map <Leader>c<space> <plug>NERDComComment
+
+" for vim-airline
+let g:airline#extensions#tabline#enabled = 1 " turn on buffer list
+set laststatus=2 " turn on bottom bar
+
+" for CALENDAR.VIM
+let g:calendar_google_calendar = 1
+let g:calendar_google_task = 1
+
+" for vim-simplefold
+let g:SimpylFold_docstring_preview=1
+
+
 
 
 
