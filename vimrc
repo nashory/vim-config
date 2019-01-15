@@ -5,14 +5,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'                                 " auto comment (, + c + <space>)
-Plug 'scrooloose/syntastic'						                " syntastic (check syntax error)
-Plug 'itchyny/calendar.vim'                                     " calendar
 Plug 'chrisbra/csv.vim'                                         " csv
-Plug 'plasticboy/vim-markdown'                                  " markdown
-Plug 'pangloss/vim-simplefold'                                  " fold code
-Plug 'https://github.com/wesleyche/SrcExpl.git'
-Plug 'https://github.com/vim-scripts/AutoComplPop.git'
-Plug 'https://github.com/vim-scripts/taglist.vim.git'
 Plug 'https://github.com/bling/vim-airline'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'                " find file (ctrl + p)
