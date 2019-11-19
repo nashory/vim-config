@@ -9,12 +9,13 @@ Plug 'chrisbra/csv.vim'                                         " csv
 Plug 'https://github.com/bling/vim-airline'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'                " find file (ctrl + p)
-Plug 'https://github.com/toupeira/vim-desertink.git'			" color scheme
-Plug 'https://github.com/leafgarland/typescript-vim.git'		" typescript
-Plug 'https://github.com/tomtom/tlib_vim.git'					" snipMate
-Plug 'https://github.com/MarcWeber/vim-addon-mw-utils.git'		" snipMate
-Plug 'https://github.com/garbas/vim-snipmate.git'				" snipMate
+Plug 'https://github.com/toupeira/vim-desertink.git'		" color scheme
+Plug 'https://github.com/leafgarland/typescript-vim.git'	" typescript
+Plug 'https://github.com/tomtom/tlib_vim.git'			" snipMate
+Plug 'https://github.com/MarcWeber/vim-addon-mw-utils.git'	" snipMate
+Plug 'https://github.com/garbas/vim-snipmate.git'		" snipMate
 Plug 'Lokaltog/vim-easymotion'                                  " move mouse curser at right position.
+Plug 'Plug 'https://github.com/posva/vim-vue'                   " Vuejs
 call plug#end()
 
 
