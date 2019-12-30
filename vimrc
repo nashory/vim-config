@@ -15,7 +15,7 @@ Plug 'https://github.com/tomtom/tlib_vim.git'			" snipMate
 Plug 'https://github.com/MarcWeber/vim-addon-mw-utils.git'	" snipMate
 Plug 'https://github.com/garbas/vim-snipmate.git'		" snipMate
 Plug 'Lokaltog/vim-easymotion'                                  " move mouse curser at right position.
-Plug 'Plug 'https://github.com/posva/vim-vue'                   " Vuejs
+Plug 'https://github.com/posva/vim-vue'                         " Vuejs
 call plug#end()
 
 
