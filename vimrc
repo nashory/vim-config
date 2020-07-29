@@ -20,6 +20,7 @@ call plug#end()
 
 
 " env setting
+set backspace=indent,eol,start
 set modifiable   " set modifiable
 set nu 		"sho lilne numbers on the screen
 set ai		"trun on auto identataion
