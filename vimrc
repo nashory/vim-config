@@ -14,12 +14,13 @@ Plug 'https://github.com/leafgarland/typescript-vim.git'	" typescript
 Plug 'https://github.com/tomtom/tlib_vim.git'			" snipMate
 Plug 'https://github.com/MarcWeber/vim-addon-mw-utils.git'	" snipMate
 Plug 'https://github.com/garbas/vim-snipmate.git'		" snipMate
-Plug 'Lokaltog/vim-easymotion'                                  " move mouse curser at right position.
+Plug 'https://github.com/easymotion/vim-easymotion'             " move mouse curser at right position.
 Plug 'https://github.com/posva/vim-vue'                         " Vuejs
 call plug#end()
 
 
 " env setting
+set mouse=a
 set backspace=indent,eol,start
 set modifiable   " set modifiable
 set nu 		"sho lilne numbers on the screen
