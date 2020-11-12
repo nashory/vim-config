@@ -18,6 +18,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ~~~
 (Ubuntu) sudo apt-get install ctags
 (OS X) brew install ctags
+(CentOS) sudo yum install ctags
 ~~~
 
 
