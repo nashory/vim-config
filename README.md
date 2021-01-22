@@ -2,6 +2,19 @@
 configuration files.
 
 
+## Install VIM 8.2 on CensOS 7
+~~~bash
+sudo yum install -y gcc make ncurses ncurses-devel
+sudo yum install -y ctags git tcl-devel ruby ruby-devel lua lua-devel luajit luajit-devel python python-devel perl perl-devel perl-ExtUtils-ParseXS perl-ExtUtils-XSpp perl-ExtUtils-CBuilder perl-ExtUtils-Embed
+sudo yum remove -y vim-enhanced vim-common vim-filesystem
+sudo rm -rf vim && sudo git clone https://github.com/vim/vim.git && cd vim
+sudo ./configure --with-features=huge --enable-multibyte --enable-rubyinterp --enable-pythoninterp --enable-perlinterp --enable-luainterp
+sudo make && sudo make install
+cd /usr/bin && sudo unlink vim && sudo ln -s /usr/local/bin/vim vim
+vim --version | less
+~~~
+
+
 ## VIM PATH
 /usr/share/vim/vim74/colors
 
