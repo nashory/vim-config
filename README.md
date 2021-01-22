@@ -1,8 +1,13 @@
 # config
 configuration files.
 
+## Install Python3 on CentOS 7
+~~~bash
+sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+sudo yum install -y python3
+~~~
 
-## Install VIM 8.2 on CensOS 7
+## Install VIM 8.2 on CentOS 7 (make sure you installed python3 already.)
 ~~~bash
 sudo yum install -y gcc make ncurses ncurses-devel
 sudo yum install -y ctags git tcl-devel ruby ruby-devel lua lua-devel luajit luajit-devel python python-devel perl perl-devel perl-ExtUtils-ParseXS perl-ExtUtils-XSpp perl-ExtUtils-CBuilder perl-ExtUtils-Embed
